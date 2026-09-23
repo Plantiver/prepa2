@@ -1,0 +1,9 @@
+{
+	"id": "depthinker-timer",
+	"name": "Depthinker Timer",
+	"version": "1.0.0",
+	"minAppVersion": "1.7.2",
+	"description": "Pomodoro and stopwatch timing with a calendar focus log stored as notes in your vault.",
+	"author": "Depthinker",
+	"isDesktopOnly": false
+}

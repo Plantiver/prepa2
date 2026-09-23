@@ -1,0 +1,2 @@
+- Potentielle d'un dipole
+- [[Démo - Intensité dans un fil]]

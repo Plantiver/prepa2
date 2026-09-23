@@ -1,0 +1,14 @@
+---
+noteId: 1789748649537
+---
+
+Les différentes règles de l'ordonnanceur.
+Un système ne peut être lancée que quand son événement de réaction est disponible, ainsi que toutes ses ressources.
+Quand un event est un timer, le système obtient une plus grande priorité dans la liste, pour pouvoir se faire le plus proche possible de l'heure à laquelle il était prévu.
+Si certaines ressources doivent être récupérées comme mutable, et ne sont pas disponible, pour certaines raison, le système qui les attends peut déposer une reserve sur cette ressource (pas plusieurs en file, sinon on a à nouveau le problème de dead locks, mais on peut permettre plusieurs à faire une ref non mutable, et sans même tenir compte des priorités).
+Quand un système, réagissant à son événement, a toutes les ressources dont il a besoin de libre, alors l'un des cpus peut le prendre dans la liste des systèmes prêts, libérer la reservation (voir procédé ci dessous), recopier tout ce dont il a besoin (à optimiser sévèrement), le laisser s'exécuter pendant une certaines durée, à voir s'il rend la main. S'il la rend, parfait, on a juste à recopier les données modifiées et à recommencer. S'il ne rends pas la main ou qu'il crash, on le termine, et il a perdu sa chance/son event (n'étant pas des monstres, on invoque quand même un event comme quoi il est mort), on modifie aussi la durée attendu de ce programme.
+
+
+Dans chaque composant, on a un champs pour celui qui l'utilise, et celui qui le demande. quand le premier devient vide, on avance le second dans le premier, et on notifie ce dernier qu'il a maintenant une chose de moins à attendre. S'il n'a plus rien à attendre, alors il peut entrer dans la liste des ready. (!!!deadlocks, check how to suppress them...)
+
+We have to differ the time where we emit an event from when we update all systems requesting for this exact event, or it would most probably end in an infinite recursion for the kernel, which may lead to dangerous problem. Instead, when emitting an event, we write somewhere, and a dedicated core read it, unlock those who needs this events, and then, if it has time enough, process to order them properly.

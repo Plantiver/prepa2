@@ -1,0 +1,18 @@
+{
+  "settings": {
+    "focusMinutes": 25,
+    "shortBreakMinutes": 5,
+    "longBreakMinutes": 30,
+    "longBreakInterval": 4,
+    "autoCycle": true,
+    "defaultMode": "pomodoro",
+    "playSound": true,
+    "vibrate": true,
+    "showNotice": true,
+    "dataFolder": "_pomodoro_log",
+    "weekStart": 1,
+    "minSessionSeconds": 60,
+    "dailyGoalMinutes": 120
+  },
+  "runtime": null
+}
