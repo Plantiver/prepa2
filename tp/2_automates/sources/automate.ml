@@ -144,10 +144,18 @@ let res = vide n in
 let rec modify acc = function
 | [] -> acc
 | h::t -> acc.(h)<-true; modify acc t in
-modify res l; res
+let _ = modify res l in res
 
 
+let rec accepte a i = function
+| []-> List.mem i a.f
+| h::t-> begin match Hashtbl.find_opt a.delta (i,h) with
+	| None -> false
+	| Some(l) -> List.exists (fun j->accepte a j t) l
+end
 
+let accepte_mot a m = 
+List.exists (fun i-> accepte a i m) a.i
 
 
 
