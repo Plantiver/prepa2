@@ -6,5 +6,9 @@ test:
 	ocamlc graphe.ml automate.ml TP2_auto_test.ml -o test.out
 	./test.out
 
+berry:
+	ocamlc -g berrysethi.ml -o berry.out
+	echo "run" | ocamldebug berry.out
+
 clean:
 	rm *.out *.cmi *.cmo
