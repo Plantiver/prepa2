@@ -161,21 +161,174 @@ Def. Les lignes de champs::
 En tout point, $\overrightarrow{E}$ est tangent aux lignes de champ.
 <!-- basicblock-end -->
 
+---
 
+<!-- basicblock-start oid="Obs1a89F2kL90pQxMzRt4Uv1" -->
+Def. Tube de champ::
+- Ensemble des lignes de champ s'appuyant sur un contour fermé $\mathcal{C}$.
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs2b90G3kM01pQxMzRt5Uv2" -->
+Def. Surface équipotentielle::
+- Ensemble des points de l'espace où le potentiel électrostatique $V$ est constant ($V = \mathrm{Cte}$).
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs3c01H4kN12pQxMzRt6Uv3" -->
+Prop. Orthogonalité des équipotentielles et lignes de champ::
+- Les surfaces équipotentielles $V = \mathrm{Cte}$ sont en tout point orthogonales aux lignes de champ électrostatique.
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs4d12I5kO23pQxMzRt7Uv4" -->
+Prop. Sens du champ électrostatique par rapport au potentiel::
+- Le champ $\vec{E}$ est dirigé vers les zones de potentiels décroissants (sens de la diminution la plus rapide de $V$).
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs5e23J6kP34pQxMzRt8Uv5" -->
+Def. Dipôle électrostatique et moment dipolaire::
+$$
+\text{Système de } -q \text{ en } N \text{ et } +q \text{ en } P \implies \vec{p} = q\vec{NP}
+$$
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs6f34K7kQ45pQxMzRt9Uv6" -->
+Def. Approximation dipolaire::
+$$
+a = NP \ll r \quad (r = OM \text{ distance au centre } O \text{ du dipôle})
+$$
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs7g45L8kR56pQxMzRt0Uv7" -->
+Prop. Écrantage des charges à grande distance::
+- À grande distance d'un système électriquement neutre, les champs des charges opposées se compensent et le champ résultant est nul au premier ordre.
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs8h56M9kS67pQxMzRt1Uv8" -->
+Form. Potentiel d'un dipôle en approximation dipolaire (forme scalaire)::
+$$
+V(M) = \frac{1}{4\pi\varepsilon_{0}}\frac{p\cos\theta}{r^{2}}
+$$
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs9i67N0kT78pQxMzRt2Uv9" -->
+Form. Potentiel d'un dipôle en approximation dipolaire (forme vectorielle)::
+$$
+V(M) = \frac{1}{4\pi\varepsilon_{0}}\frac{\vec{p}\cdot\vec{e}_{r}}{r^{2}}
+$$
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs0j78O1kU89pQxMzRt3Uv0" -->
+Form. Composante radiale $E_r$ du champ d'un dipôle::
+$$
+E_{r} = -\frac{\partial V}{\partial r} = \frac{1}{2\pi\varepsilon_{0}}\frac{p\cos\theta}{r^{3}}
+$$
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs1k89P2kV90pQxMzRt4Uv1" -->
+Form. Composante orthoradiale $E_\theta$ du champ d'un dipôle::
+$$
+E_{\theta} = -\frac{1}{r}\frac{\partial V}{\partial\theta} = \frac{1}{4\pi\varepsilon_{0}}\frac{p\sin\theta}{r^{3}}
+$$
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs2l90Q3kW01pQxMzRt5Uv2" -->
+Form. Champ électrostatique d'un dipôle (expression vectorielle intrinsèque)::
+$$
+\vec{E}(M) = \frac{1}{4\pi\varepsilon_{0}r^{3}}\left(3(\vec{p}\cdot\vec{e}_{r})\vec{e}_{r} - \vec{p}\right)
+$$
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs3m01R4kX12pQxMzRt6Uv3" -->
+Prop. Force résultante sur un dipôle dans un champ uniforme $\vec{E}_0$::
+$$
+\vec{F} = +q\vec{E}_{0} - q\vec{E}_{0} = \vec{0}
+$$
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs4n12S5kY23pQxMzRt7Uv4" -->
+Form. Moment du couple sur un dipôle dans un champ uniforme $\vec{E}_0$::
+$$
+\vec{\Gamma}_{O} = \vec{p}\wedge\vec{E}_{0}
+$$
+<!-- basicblock-end -->
 
+<!-- basicblock-start oid="Obs5o23T6kZ34pQxMzRt8Uv5" -->
+Form. Énergie potentielle d'un dipôle dans un champ uniforme $\vec{E}_0$::
+$$
+\mathcal{E}_{p} = -\vec{p}\cdot\vec{E}_{0}
+$$
+<!-- basicblock-end -->
+
+<!-- basicblock-start oid="Obs6p34U7kA45pQxMzRt9Uv6" -->
+Prop. Positions d'équilibre d'un dipôle dans un champ uniforme::
+- Équilibre stable : $\vec{p}$ et $\vec{E}_0$ parallèles et de même sens ($\mathcal{E}_p$ minimale).
+- Équilibre instable : $\vec{p}$ et $\vec{E}_0$ antiparallèles ($\mathcal{E}_p$ maximale).
+<!-- basicblock-end -->
+
+<!-- basicblock-start oid="Obs7q45V8kB56pQxMzRt0Uv7" -->
+Form. Moment du couple sur un dipôle dans un champ non uniforme $\vec{E}$::
+$$
+\vec{\Gamma}_{O} = \vec{p}\wedge\vec{E}_{O} \quad (\vec{E}_{O} \text{ champ au centre } O \text{ du dipôle})
+$$
+<!-- basicblock-end -->
+
+<!-- basicblock-start oid="Obs8r56W9kC67pQxMzRt1Uv8" -->
+Form. Énergie potentielle d'un dipôle dans un champ non uniforme $\vec{E}$::
+$$
+\mathcal{E}_{p} = -\vec{p}\cdot\vec{E}_{O} \quad (\vec{E}_{O} \text{ champ au centre } O \text{ du dipôle})
+$$
+<!-- basicblock-end -->
+
+<!-- basicblock-start oid="Obs9s67X0kD78pQxMzRt2Uv9" -->
+Form. Force subie par un dipôle dans un champ non uniforme $\vec{E}$::
+$$
+\vec{F} = -\vec{\mathrm{grad}}\mathcal{E}_{p} = \vec{\mathrm{grad}}(\vec{p}\cdot\vec{E}_{O})
+$$
+<!-- basicblock-end -->
+
+<!-- basicblock-start oid="Obs0t78Y1kE89pQxMzRt3Uv0" -->
+Prop. Effet d'un champ non uniforme sur un dipôle::
+- Oriente le dipôle le long des lignes de champ de $\vec{E}_{O}$.
+- Déplace le dipôle vers les zones de champ fort.
+<!-- basicblock-end -->
+
+---
+
+<!-- basicblock-start oid="Obs0u89Z2kF90pQxMzRt4Uv1" -->
+Prop. Moment dipolaire d'une liaison covalente entre $N$ et $P$ ($\chi(N)>\chi(P)$)::
+$$
+\vec{\mu} = \delta e \vec{NP}
+$$
+<!-- basicblock-end -->
+
+<!-- basicblock-start oid="Obs1v90A3kG01pQxMzRt5Uv2" -->
+Def. Conversion de l'unité du Debye (D)::
+$$
+1\text{ D} = 3{,}33 \times 10^{-30}\text{ C}\cdot\text{m}
+$$
+<!-- basicblock-end -->
+
+<!-- basicblock-start oid="Obs2w01B4kH12pQxMzRt6Uv3" -->
+Def. Moment dipolaire total d'une molécule::
+$$
+\vec{\mu} = \sum_{i}\vec{\mu}_{i}
+$$
+<!-- basicblock-end -->
+
+<!-- basicblock-start oid="Obs3x12C5kI23pQxMzRt7Uv4" -->
+Def. Molécule polaire et apolaire::
+- Molécule polaire : $\vec{\mu} \neq \vec{0}$
+- Molécule apolaire : $\vec{\mu} = \vec{0}$
+<!-- basicblock-end -->
+
+<!-- basicblock-start oid="Obs4y23D6kJ34pQxMzRt8Uv5" -->
+Prop. Géométrie d'équilibre d'une molécule::
+- La géométrie d'une molécule est celle qui minimise son énergie potentielle électrostatique totale.
+<!-- basicblock-end -->
+
+<!-- basicblock-start oid="Obs5z34E7kK45pQxMzRt9Uv6" -->
+Prop. Concept d'action locale du champ électrostatique::
+- Substitue à la notion d'action à distance entre charges la notion d'action locale exercée par le champ $\vec{E}$ au point où se situe la charge subissant la force.
+<!-- basicblock-end -->
 
 
 

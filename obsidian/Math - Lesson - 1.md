@@ -370,15 +370,3 @@ $$
 \mathrm{Set}( a_{i} )\in \mathbb{K},L_{i}=\prod_{j\in[1,n]\setminus \mathrm{Set}( i )}\frac{X-a_{j}}{a_{i}-a_{j}}
 $$
 <!-- basicblock-end -->
-
-
-
-
-
-
-
-
-
-
-
-

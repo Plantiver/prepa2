@@ -132,11 +132,11 @@ $L$ est local sur $\Sigma$ ssi $\exists P,D\subset\Sigma, \exists N\subset \Sigm
 Th. Langage d'une expression régulière linéaire::
 Le langage d'une expression régulière linéaire est local.
 <!-- basicblock-end -->
-<!-- basicblock-start -->
+<!-- basicblock-start oid="ObsNBKR0Os85uY0WDwtWy7EG" -->
 Def. Automate fini généralisé::
 Les étiquettes sont des expressions régulière, et il n'y a qu'une seule flèche.
 <!-- basicblock-end -->
-<!-- basicblock-start -->
+<!-- basicblock-start oid="ObshzleEEqU3QGHcbLmGeiHb" -->
 Th. Lemme de l'étoile::
 Soit $L$ régulier, alors:
 $$
@@ -147,8 +147,18 @@ y\not=\varepsilon \cr
 \end{cases}
 $$
 <!-- basicblock-end -->
-
-
+<!-- basicblock-start oid="ObsONaYwcDuyozteaqPbd0fm" -->
+Meth. Regex to Automate::
+- Linéariser l'expression
+- Calculer les langages locaux
+- Construire l'automate associés
+- Délinéariser
+<!-- basicblock-end -->
+<!-- basicblock-start oid="ObsyegGdafAKgAPVQlgHCAxU" -->
+Meth. Automate to Regex::
+- Simplification en annotant les transitions par des regex
+- Itérer
+<!-- basicblock-end -->
 # Exo
 1. 
 Si $y=a^{k}$, alors l'expression $xy^{\star}z$ n'est pas dans $L$.

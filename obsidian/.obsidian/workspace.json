@@ -13,8 +13,8 @@
             "state": {
               "type": "full-calendar-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "full-calendar-view"
+              "icon": "calendar-glyph",
+              "title": "Calendar"
             }
           },
           {
@@ -33,22 +33,32 @@
             }
           },
           {
-            "id": "47c7e984b58afd95",
+            "id": "c186dfcf7e5723c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Démo.md",
+                "file": "EM2 - Sources continues du champ électromagnétique.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Démo"
+              "title": "EM2 - Sources continues du champ électromagnétique"
+            }
+          },
+          {
+            "id": "47446ad9f485a13a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -121,44 +131,44 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "ObsidianAnkiSync:Start Obsidian Anki Sync": false,
       "command-palette:Open command palette": false,
       "graph:Open graph view": false,
       "templates:Insert template": false,
       "full-calendar-remastered:Open Full Calendar": false,
       "full-calendar-remastered:FCR Command": false,
       "omnisearch:Omnisearch": false,
-      "depthinker-timer:Open timer panel": false,
-      "remotely-save:Remotely Save": false
+      "depthinker-timer:Open timer panel": false
     }
   },
-  "active": "e589e90c08f921d3",
+  "active": "c186dfcf7e5723c9",
   "lastOpenFiles": [
+    "TODO.md",
+    "Phys - Lesson.md",
+    "EM2 - Sources continues du champ électromagnétique.md",
+    "EM1 - Champs et potentiels créés par des charges ponctuelles.md",
+    "Phys.md",
+    "Math.md",
+    "Math - Lesson.md",
+    "Math - Lesson - 4.md",
+    "Math - Lesson - 3.md",
+    "Math - Lesson - 2.md",
+    "Math - Lesson - 1.md",
+    "Math - Dm.md",
+    "Info.md",
+    "Info - Lesson.md",
+    "Info - Lesson - 3.md",
+    "Info - Lesson - 2.md",
+    "Info - Lesson - 1.md",
+    "EM3 - Équation de Maxwell-Gauss et théorème de Gauss.md",
+    "E2 - Electronique logique.md",
+    "E1 - Révisions et Compléments.md",
+    "complexité.md",
     "Démo.md",
     "Démo - Intensité dans un fil.md",
-    "Info - Lesson - 3.md",
-    "Info - Lesson.md",
-    "TODO.md",
-    "Info - Lesson - 2.md",
-    "EM2 - Sources continues du champ électromagnétique.md",
-    "Math - Lesson - 1.md",
-    "Phys - Lesson.md",
-    "Phys.md",
-    "EM1 - Champs et potentiels créés par des charges ponctuelles.md",
-    "Math - Lesson.md",
-    "Math.md",
     "Traduction.md",
     "English.md",
     "English - synthèse.md",
-    "English - synthèse -1.md",
-    "Info - Lesson - 1.md",
-    "Info.md",
-    "Fr-philo.md",
-    "Fr-philo - note.md",
-    "Fr-philo - flash.md",
-    "Math - Dm - 1.md",
-    "Dissertation - Méthode.md",
-    "Dissertation.md",
-    "Kernel.md",
     "FocusLog/2026",
     "FocusLog",
     "_pomodoro_log/2026",
