@@ -50,12 +50,66 @@ Représentation réelle d'un ADT.
 Def. Implémentation Union&Find::
 - Tableau où $tab.(i)$ contient le représentant de $i$
 - Graphe où la composante connexe de $i$ est sa classe d'aquivalence
-- Forest.
+- Forêt: un tableau où $tab.(i)$ est le parent de $i$.
 <!-- basicblock-end -->
 
+```rust
 
+pub struct Node {
+	pub parent: Some(usize),
+	pub rank: usize
+}
 
+pub struct UnionFindImpl {
+	partition: Box<[node]>,
+}
 
+pub trait UnionFind {
+	pub fn init(n:usize) ->Self;
+	pub fn trouver(&self, i:usize) ->usize;
+	pub fn unir(&mut self, i:usize);
+}
 
+pub impl UnionFind for UnionFindImpl {
+	pub fn init(n:usize) {
+		Self {
+			{
+			let r:[node;n];
+			for i in 0..n {
+				r[i] = Node {
+					None,
+					1
+				}
+			}
+			Box::from(r)
+			}
+		}
+	}
+	pub fn trouver(&self, i:usize) -> usize {
+		while let Some(i) = self.partition[i].parent {};
+		i
+	}
+	pub fn unir(&mut self, i:usize, j:usize) {
+		let i = self.trouver(i);
+		let j = self.trouver(j);
+		if self.partition[i].rank<self.partition[j].rank {
+			self.partition[j] = Node {
+				Some(i),
+				self.partition[j].rank
+			};
+		} else {
+			self.partition[i] = Node {
+				Some(j),
+				max(self.partition[i].rank, self.partition[j].rank+1)
+			}
+		}
+	}
+}
+
+```
+
+**Justification de l'invariant**
+- Si $r_{1}=r_{2}$, rien ne change
+- Sinon, les deux arbres sont disjoint, donc il ne peut pas y avoir d'arrète qui permettent la création d'un cycle
 
 

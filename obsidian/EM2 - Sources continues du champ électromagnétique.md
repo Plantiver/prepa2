@@ -280,6 +280,8 @@ $$
 La loi de Joule !!!
 
 
+---
+
 
 
 

@@ -31,34 +31,9 @@
               "icon": "lucide-file",
               "title": "TODO"
             }
-          },
-          {
-            "id": "c186dfcf7e5723c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "EM2 - Sources continues du champ électromagnétique.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "EM2 - Sources continues du champ électromagnétique"
-            }
-          },
-          {
-            "id": "47446ad9f485a13a",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,34 +116,34 @@
       "depthinker-timer:Open timer panel": false
     }
   },
-  "active": "c186dfcf7e5723c9",
+  "active": "ec46f81d53c5e4bc",
   "lastOpenFiles": [
+    "Calendar.md",
+    "Main.md",
+    "Untitled.md",
     "TODO.md",
-    "Phys - Lesson.md",
+    "E2 - Electronique logique.md",
+    "_pomodoro_log/2026/2026-09-13.md",
+    "Démo.md",
+    "Math - Lesson - 5.md",
+    "Math - Lesson - 4.md",
+    "Epreuves.md",
+    "Modalité - Mines-Pont.md",
+    "Modalité - ENS.md",
+    "Math - Lesson.md",
+    "English.md",
     "EM2 - Sources continues du champ électromagnétique.md",
+    "EM3 - Équation de Maxwell-Gauss et théorème de Gauss.md",
+    "Info - Lesson - 4.md",
+    "Info - Lesson.md",
+    "Info - Lesson - 3.md",
+    "Info.md",
+    "Info - Doc - Ocaml.md",
+    "Info - Doc.md",
+    "Phys - Lesson.md",
     "EM1 - Champs et potentiels créés par des charges ponctuelles.md",
     "Phys.md",
     "Math.md",
-    "Math - Lesson.md",
-    "Math - Lesson - 4.md",
-    "Math - Lesson - 3.md",
-    "Math - Lesson - 2.md",
-    "Math - Lesson - 1.md",
-    "Math - Dm.md",
-    "Info.md",
-    "Info - Lesson.md",
-    "Info - Lesson - 3.md",
-    "Info - Lesson - 2.md",
-    "Info - Lesson - 1.md",
-    "EM3 - Équation de Maxwell-Gauss et théorème de Gauss.md",
-    "E2 - Electronique logique.md",
-    "E1 - Révisions et Compléments.md",
-    "complexité.md",
-    "Démo.md",
-    "Démo - Intensité dans un fil.md",
-    "Traduction.md",
-    "English.md",
-    "English - synthèse.md",
     "FocusLog/2026",
     "FocusLog",
     "_pomodoro_log/2026",

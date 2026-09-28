@@ -109,7 +109,7 @@ On va choisir des surfaces de Gauss tel que le calcul soit simple:
 - $\overrightarrow{E}$ constant sur $\mathrm{d}S$.
 
 **Rq**
-Dans le cas statique, on peut utiliser $\overrightarrow{E}-\overrightarrow{ \mathrm{grad}}V$pour calculer V.
+Dans le cas statique, on peut utiliser $\overrightarrow{E}=-\overrightarrow{ \mathrm{grad}}V$pour calculer V.
 
 **Analogie avec la gravitation**
 $$
