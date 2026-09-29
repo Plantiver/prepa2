@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4d77af825a0a1f66",
+            "id": "8a065075279a3aad",
             "type": "leaf",
             "state": {
               "type": "full-calendar-view",
@@ -18,7 +18,7 @@
             }
           },
           {
-            "id": "ec46f81d53c5e4bc",
+            "id": "733dbe56647bcfc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,9 +31,24 @@
               "icon": "lucide-file",
               "title": "TODO"
             }
+          },
+          {
+            "id": "1b3bdd124414a8e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tipe - Process.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Tipe - Process"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -65,41 +80,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "3432f6c93d05637d",
     "type": "split",
-    "children": [
-      {
-        "id": "27783d5678f502bc",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ab6b419d494fcf32",
-            "type": "leaf",
-            "state": {
-              "type": "depthinker-timer-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "depthinker-timer-view"
-            }
-          },
-          {
-            "id": "e589e90c08f921d3",
-            "type": "leaf",
-            "state": {
-              "type": "depthinker-timer-view",
-              "state": {},
-              "icon": "timer",
-              "title": "Depthinker Timer"
-            }
-          }
-        ],
-        "currentTab": 1
-      }
-    ],
+    "children": [],
     "direction": "horizontal",
     "width": 200,
     "collapsed": true
@@ -112,38 +98,37 @@
       "templates:Insert template": false,
       "full-calendar-remastered:Open Full Calendar": false,
       "full-calendar-remastered:FCR Command": false,
-      "omnisearch:Omnisearch": false,
-      "depthinker-timer:Open timer panel": false
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "ec46f81d53c5e4bc",
+  "active": "1b3bdd124414a8e2",
   "lastOpenFiles": [
-    "Calendar.md",
+    "TIPE.md",
+    "Tipe - Process.md",
     "Main.md",
-    "Untitled.md",
     "TODO.md",
-    "E2 - Electronique logique.md",
-    "_pomodoro_log/2026/2026-09-13.md",
-    "Démo.md",
-    "Math - Lesson - 5.md",
-    "Math - Lesson - 4.md",
-    "Epreuves.md",
-    "Modalité - Mines-Pont.md",
-    "Modalité - ENS.md",
-    "Math - Lesson.md",
+    "Info - Td - 2.md",
+    "English - Méthode - Mines-Pont.md",
+    "English - Méthode.md",
+    "English - Press Review.md",
+    "English - Traduction.md",
+    "English - Verrou centrale.md",
+    "English - synthèse -1.md",
+    "English - synthèse.md",
     "English.md",
-    "EM2 - Sources continues du champ électromagnétique.md",
-    "EM3 - Équation de Maxwell-Gauss et théorème de Gauss.md",
-    "Info - Lesson - 4.md",
-    "Info - Lesson.md",
-    "Info - Lesson - 3.md",
-    "Info.md",
-    "Info - Doc - Ocaml.md",
-    "Info - Doc.md",
+    "Phys - Dm.md",
+    "Phys - Démo - Intensité dans un fil.md",
+    "Phys - Démo.md",
+    "Phys - E1 - Révisions et Compléments.md",
+    "Phys - E2 - Electronique logique.md",
+    "Phys - EM1 - Champs et potentiels créés par des charges ponctuelles.md",
+    "Phys - EM2 - Sources continues du champ électromagnétique.md",
+    "Phys - EM3 - Équation de Maxwell-Gauss et théorème de Gauss.md",
     "Phys - Lesson.md",
-    "EM1 - Champs et potentiels créés par des charges ponctuelles.md",
     "Phys.md",
-    "Math.md",
+    "Math - Dm - 1.md",
+    "Math - Dm.md",
+    "Math - Démo.md",
     "FocusLog/2026",
     "FocusLog",
     "_pomodoro_log/2026",

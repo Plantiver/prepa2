@@ -10,6 +10,6 @@ skipDates: []
 daysOfWeek:
   - M
 timezone: Europe/Paris
-noteId: 1789748648143
 ---
 [[Math]]
+#calendar

@@ -10,6 +10,6 @@ skipDates: []
 daysOfWeek:
   - R
 timezone: Europe/Paris
-noteId: 1789748647894
 ---
 [[Info]]
+#calendar

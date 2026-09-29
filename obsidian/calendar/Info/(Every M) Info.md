@@ -11,6 +11,6 @@ daysOfWeek:
   - M
 timezone: Europe/Paris
 color: purple
-noteId: 1789748647859
 ---
 [[Info]]
+#calendar

@@ -1,6 +1,7 @@
 ---
 deck: math
 ---
+
 # Espace vectoriel normé
 
 ---

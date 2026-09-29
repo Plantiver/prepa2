@@ -3,6 +3,7 @@ deck: info
 ---
 
 
+
 # Structure de donnée
 
 <!-- basicblock-start oid="ObsMXisyLU8B3nhZDuTSXo1v" -->

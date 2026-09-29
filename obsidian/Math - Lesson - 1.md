@@ -1,6 +1,5 @@
 ---
 deck: math
-noteId: 1789748649304
 ---
 
 <!-- basicblock-start oid="ObsNwnuvcFNalOxSVwfx4AYD" -->

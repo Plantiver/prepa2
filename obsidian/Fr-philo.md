@@ -1,10 +1,6 @@
----
-noteId: 1789748649038
----
-
-[[Dissertation]]
-[[Résumé]]
-[[Citation]]
+[[Fr-philo - Dissertation]]
+[[Fr-philo - Résumé]]
+[[Fr-philo - Citation]]
 
 [[Fr-philo - note]]
 [[Fr-philo - flash]]

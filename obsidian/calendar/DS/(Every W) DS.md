@@ -10,5 +10,5 @@ skipDates: []
 daysOfWeek:
   - W
 timezone: Europe/Paris
-noteId: 1789748647592
 ---
+#calendar

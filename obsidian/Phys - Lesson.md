@@ -1,13 +1,10 @@
----
-noteId: 1789748649587
----
 
 
-[[E1 - Révisions et Compléments]]
-[[E2 - Electronique logique]]
-[[EM1 - Champs et potentiels créés par des charges ponctuelles]]
-[[EM2 - Sources continues du champ électromagnétique]]
-[[EM3 - Équation de Maxwell-Gauss et théorème de Gauss]]
+[[Phys - E1 - Révisions et Compléments]]
+[[Phys - E2 - Electronique logique]]
+[[Phys - EM1 - Champs et potentiels créés par des charges ponctuelles]]
+[[Phys - EM2 - Sources continues du champ électromagnétique]]
+[[Phys - EM3 - Équation de Maxwell-Gauss et théorème de Gauss]]
 [[EM4 - Magnétostatique]]
 
 

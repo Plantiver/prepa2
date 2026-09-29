@@ -10,6 +10,6 @@ skipDates: []
 repeatInterval: 2
 daysOfWeek: [M]
 timezone: Europe/Paris
-noteId: 1789748647707
 ---
 [[English]]
+#calendar

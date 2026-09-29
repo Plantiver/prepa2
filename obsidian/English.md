@@ -1,9 +1,7 @@
----
-noteId: 1789748648844
----
 
 
-[[Traduction]]
-[[Press Review]]
-[[Verrou centrale]]
+[[English - Traduction]]
+[[English - Press Review]]
+[[English - Verrou centrale]]
 [[English - synthèse]]
+[[English - Méthode]]

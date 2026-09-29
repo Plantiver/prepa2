@@ -1,6 +1,3 @@
----
-noteId: 1789748648604
----
 
 "Un adulte c'est quelqu'un qui ne se fait plus dessus - ou en tout cas pour un certain temps, avant que ça ne revienne", Anaïs Simon.
 "Vive Windows, Vive chat gpt, Vive Tinder", Florent Nicaise

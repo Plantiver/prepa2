@@ -11,6 +11,6 @@ repeatInterval: 2
 daysOfWeek:
   - F
 timezone: Europe/Paris
-noteId: 1789748648355
 ---
 [[Phys]]
+#calendar

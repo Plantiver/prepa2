@@ -10,6 +10,6 @@ skipDates: []
 daysOfWeek:
   - T
 timezone: Europe/Paris
-noteId: 1789748647775
 ---
 [[Fr-philo]]
+#calendar

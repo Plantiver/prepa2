@@ -1,7 +1,7 @@
 ---
 deck: math
-noteId: 1789748649354
 ---
+
 <!-- basicblock-start oid="ObsGArlYmVsq3I18xegMnIWw" -->
 Def. Prod de $A\in \mathcal{M}_{n,p}(\mathbb{K}), B\in \mathcal{M}_{p,q}(\mathbb{K})$::
 $$
