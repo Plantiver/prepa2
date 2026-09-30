@@ -14,14 +14,37 @@
 # [[Math]]
 - DL, relation d'ordre et d'équivalence
 # [[Phys]]
-- cours E1, E2, EM1, EM2 en fiche
+- cours E2, EM1, EM2 en fiche
 - cours de l'année dernière en fiche
 - carte mentale EM
+- Champ et potentiel de la sphère
 # [[English]]
 - Fiche méthode concours
 - Note grammar
 - finir trad
 # [[TIPE]]
 - Memory mapping
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -181,5 +181,240 @@ $\overrightarrow{E(r)}=\frac{Q_{\text{tot}}}{4\pi\varepsilon_{0}r^{2}}\overright
 **Rq**
 Si $r>R$, on retrouve la même chose qu'avec une particule, ce qui permet de considérer les objets comme telle en première année.
 
+**Autres méthode:** calcul direct par Maxwell-Gauss.
+En sphérique:
+$$
+\mathrm{div}\overrightarrow{E}=\frac{1}{r^{2}}\frac{ \partial r^{2}E_{r} }{ \partial r } +\frac{1}{r\sin\varphi}\frac{ \partial E_{\theta} }{ \partial \theta } +\frac{1}{r\sin}\frac{ \partial \sin\theta E_{\varphi} }{ \partial \varphi } 
+$$
+Or $\overrightarrow{E}=E(r)\overrightarrow{e_{r}}$
+$\implies \mathrm{div}\overrightarrow{E}=\frac{1}{r^{2}}\frac{ \partial r^{2}E_{r} }{ \partial r }$
+
+En symétrie sphérique, calculons le flux sortant d'une coquille sphérique de rayon $r$ et d'épaisseur $\mathrm{d}r$.
+
+Flux entrant en $r$: $\phi(r)=4\pi r^{2}E(r)$
+Flux sortant en $r+\mathrm{d}r$: $\phi(r+\mathrm{d}r)=4\pi(r+\mathrm{d}r)^{2}E(r+\mathrm{d}r)$.
+
+En posant: $f(r)=r^{2}E(r)$:
+$\implies d\phi=4\pi \frac{df}{dr}dr$
+Mais $d\phi=(\mathrm{div}\overrightarrow{E})dV$.
+$dV=4\pi r^{2}dr$.
+
+Mais
+$$
+d\phi=4\pi \frac{d}{dr} (r^{2}R)dr
+$$
+et
+$$
+d\phi=\mathrm{div}\overrightarrow{E}dV=\mathrm{div}\overrightarrow{E}4\pi r^{2}dr
+$$
+Donc:
+$$
+\mathrm{div}\overrightarrow{E}=\frac{1}{r^{2}}\frac{ \partial  }{ \partial r } (r^{2}E)
+$$
+*D'après Maxwell-Gauss:*
+$$
+\mathrm{div}\overrightarrow{E}=\frac{\rho(r)}{\varepsilon_{0}}
+$$
+- Si $r<R$:
+$\rho(r)=\rho_{0}$
+$$
+\begin{flalign*}
+\frac{1}{r^{2}}\frac{ \partial  }{ \partial r } (r^{2}E)=&\frac{\rho_{0}}{\varepsilon_{0}}&&\cr
+\frac{ \partial  }{ \partial r } (r^{2}E)=&\frac{\rho_{0}r^{2}}{\varepsilon_{0}}&&\cr
+r^{2}E=&\frac{\rho_{0}r^{3}}{3\varepsilon_{0}}+K_{1}&&\cr
+\end{flalign*}
+$$
+En $r=0$, $\overrightarrow{E}$ appartient à tout les plans de symétrie, donc $\overrightarrow{E(0)}=\overrightarrow{0}$.
+Donc $K_{1}=0$.
+D'où, si $r<R$:
+$$
+E(r)=\frac{\rho r}{3\varepsilon_{0}}
+$$
+- Si $r>R$:
+$$
+\begin{flalign*}
+\rho(r)=&0&&\cr
+\mathrm{div}\overrightarrow{E}=&0&&\cr
+\frac{ \partial  }{ \partial r } (r^{2}E)=&0&&\cr
+E=&\frac{K_{2}}{r^{2}}&&\cr
+\end{flalign*}
+$$
+$E$ est continue, étant solution d'une équation différentielle:
+$E(R^{+})=E(R^{-})$
+$$
+K_{2}=\frac{\rho_{0}R^{3}}{3\varepsilon_{0}}
+$$
+$$
+\begin{flalign*}
+E(r)=&\frac{1}{r^{2}}\int_{0}^{r}\frac{\rho(u)u^{2}}{\varepsilon_{0}}du&&\cr
+\end{flalign*}
+$$
+**Calcul du potentiel électrostatique**
+$$
+\overrightarrow{E}=-\overrightarrow{ \mathrm{grad}}V=-\frac{dV}{dr}\overrightarrow{e_{r}}
+$$
+
+- Si $r<R$:
+$$
+\begin{flalign*}
+E=&\frac{r\rho_{0}}{3\varepsilon_{0}}&&\cr
+\implies \frac{dV}{dr}=&-\frac{r\rho_{0}}{3\varepsilon_{0}}&&\cr
+\implies V(r)=&-\frac{\rho_{0}r^{2}}{6\varepsilon_{0}}+K_{3}&&\cr
+\end{flalign*}
+$$
+- Si $r>R$:
+$$
+V(r)=\frac{\rho_{0}R^{3}}{3\varepsilon_{0}r}+K_{4}
+$$
+On CHOISIT de prendre l'origine des potentiels en $+\infty$.
+Donc $K_{4}=0$
+... calculs
+$K_{2}=\frac{1}{2}\frac{\rho_{0}R^{2}}{\varepsilon_{0}}$
+... schémas
+
+**Application: énergie de liaison d'un noyau atomique**:
+
+Pour "construire un atome", on veut construire une boule de rayon $R$ et de charge uniforme $\rho_{0}$.
+On apporte une charge $dq$ de l'infini qu'on place en coquille sphérique au rayon $r$ d'une boule déjà construite.
+Le travaille nécessaire: $\delta W=V(r)dq$.
+Or $dq=\rho_{0}dV=\rho_{04}\pi r^{2}dr$
+et $V(r)=\frac{\rho_{0}r^{2}}{3\varepsilon_{0}}$
+Donc: $\delta W=\frac{\rho_{0}^{2}4\pi r^{2}}{3\varepsilon_{0}}dr$
+$$
+\begin{flalign*}
+\mathscr{E}&=\int_{0}^{R}\delta W&&\cr
+&=\int_{0}^{R}\frac{\rho_{0}^{2}4\pi r^{4}}{3\varepsilon_{0}}dr&&\cr
+&=\frac{\rho_{0}^{2}4\pi R^{5}}{15\varepsilon_{0}}&&\cr
+\end{flalign*}
+$$
+**Rq**:
+On peut montrer que:
+$$
+\mathscr{E}=\frac{1}{2}\iiint_{V}\rho(\overrightarrow{r})V(\overrightarrow{r})\mathrm{d}\tau
+$$
+Exo: retrouver $\mathscr{E}$ à partir de cette formule.
+
+## 3 - Le cylindre infini chargé en Volume
+En coordonnée cylindrique:
+$$
+\rho(r)=\begin{cases}
+\rho_{0}\text{ si }r<R \cr
+0 \text{ sinon}
+\end{cases}
+$$
+1. Symétries et invariances:
+invariant:
+- translation d'axe $z$
+- translation dans le temps
+- rotation d'angle $\theta$.
+symétrie:
+- Le plan de $\overrightarrow{OM}$ et $\overrightarrow{O_{z}}$.
+- Le plan de $(M,\overrightarrow{e_{r}},\overrightarrow{e_{\theta}})$
+Donc: $\overrightarrow{E(r)}=E(r)\overrightarrow{e_{r}}$.
+2. Choix de la surface de Gauss
+On choisit la surface du cylindre centrée en $O_{z}$, passant par $M$, de hauteur $H$.
+$$
+\begin{flalign*}
+\oint \int_{S}\overrightarrow{E}\cdot \overrightarrow{dS}&=\iint_{\text{Haut}}\overrightarrow{E}\cdot \overrightarrow{dS}+\iint_{\text{Bas}}\overrightarrow{E}\cdot \overrightarrow{dS}+\iint_{\text{side}}\overrightarrow{E}\cdot \overrightarrow{dS}&&\cr
+&=\iint_{\text{side}} E\times dS&&\cr
+&=E(r)2\pi rH&&\cr
+\end{flalign*}
+$$
+3. Application du th.
+$$
+\oint \int_{S}\overrightarrow{E}\cdot \overrightarrow{dS}=\frac{Q_{\text{int}}}{\varepsilon_{0}}
+$$
+- Si $r<R$:
+$$
+Q_{\text{int}}=\rho_{0}V=\rho_{0}\pi r^{2}H
+$$
+Donc:
+$$
+\begin{flalign*}
+E(r)2\pi rH=&\frac{\rho_{0} \pi r^{2}H}{\varepsilon_{0}}&&\cr
+\implies E(r)=&\frac{\rho_{0}r}{Z\varepsilon_{0}}&&\cr
+\end{flalign*}
+$$
+- Si $r>R$:
+$$
+Q_{\text{int}}=\rho_{0}\pi R^{2}H
+$$
+Donc:
+$$
+\begin{flalign*}
+E(r)2\pi rH=&\frac{\rho_{0}\pi R^{2}H}{\varepsilon_{0}}&&\cr
+\implies E(r)=&\frac{\rho_{0}R^{2}}{2\varepsilon_{0}r}&&\cr
+\end{flalign*}
+$$
+
+4. Calcul direct par Maxwell-Gauss
+$$
+\mathrm{div}\overrightarrow{E}=\frac{1}{r}\frac{ \partial  }{ \partial r } (rE(r))
+$$
+rq: $d\phi=\phi(r+dr)-\phi(r)$.
+$\phi(r)=E(r)2\pi rH$
+$\phi(r+dr)=E(r+dr)2\pi(r+dr)H$
+$d\phi=2\pi \frac{d}{dr}(rE(r))H=(\mathrm{div}\overrightarrow{E})dV$
+avec
+$dV=2\pi rdrH=\pi(r+dr)^{2}H-\pi r^{2}H$
+$\implies \mathrm{div}\overrightarrow{E}=\frac{1}{r}\frac{ \partial  }{ \partial r }(rE)$
+Ensuite, on raisonne de même que précédemment, et on obtient des valeurs similaire, on choisit  notre origine des potentielles, et c'est tout bon...
+(Je ne vais pas tout écrire, surtout si le prof dis que c'est pas tant obligatoire.)
+
+5. Calcul du potentiel
+$$
+\overrightarrow{E}=-\overrightarrow{ \mathrm{grad}}V=-\frac{dV}{dr}\overrightarrow{e_{r}}
+$$
+- $r<R$:
+$V(r)=-\frac{\rho_{0}r^{2}}{4\varepsilon_{0}}+K_{3}$
+- $r>R$:
+$V(r)=-\frac{\rho_{0}R^{3}}{2\varepsilon_{0}}+K_{4}$
+
+Choix de l'origine des potentiels:
+Dans le poly, $V(0)=0$
+Ici, on choisit $V(r=R)=0$. Le choix n'a pas d'importance tant que ce n'est pas l'infini, qui diverge.
+- $r<R$:
+$-\frac{\rho_{0}R^{2}}{4\varepsilon_{0}}+K_{3}=0\implies V(r)=\frac{\rho_{0}}{4\varepsilon_{0}}(R^{2}-r^{2})$
+- $r>R$:
+$V(r)=-\frac{\rho_{0}R^{2}}{2\varepsilon_{0}}\ln\left( \frac{r}{R} \right)$
+
+# III - Le condensateur plan
+## 1 - Champs d'un plan infini chargé en surface
+1. Invariances et symétries
+Invariances:
+- Toute translation de x,y, et t
+Symétries:
+- $(M,\overrightarrow{e_{z}},\overrightarrow{e_{x}})$
+- $(M, \overrightarrow{e_{z}}, \overrightarrow{e_{y}})$
+D'où: $\overrightarrow{E}=E(z)\overrightarrow{e_{z}}$
+De plus, il y a une symétrie globale, le plan est un plan de symétries
+Donc, $\overrightarrow{E(z)}=-\overrightarrow{E(-z)}$
+2. Choix de la surface de Gauss
+On prends un cylindre orientée selon $\overrightarrow{e_{z}}$, de hauteur $2H$, et coupée en son milieu par notre surface.
+$$
+\begin{flalign*}
+\oint \int_{S}\overrightarrow{E}\cdot \overrightarrow{dS}=&\iint_{\text{Haut}}\overrightarrow{E}\cdot \overrightarrow{dS}+\iint_{\text{Bas}}\overrightarrow{E}\cdot \overrightarrow{dS}+\iint_{\text{side}}\overrightarrow{E}\cdot \overrightarrow{dS}&&\cr
+=&E(z)S+ (-E(-z)S)+0&&\cr
+=&2E(z)S&&\cr
+\end{flalign*}
+$$
+3. Application du th.
+$Q_{\text{int}}=\sigma S$
+$$
+\begin{flalign*}
+\oint \int_{S}\overrightarrow{E}\cdot \overrightarrow{dS}=&\frac{Q_{\text{int}}}{\varepsilon_{0}}&&\cr
+\implies2E(z)S=&\frac{\sigma S}{\varepsilon_{0}}&&\cr
+\implies E(z)=&\frac{\sigma}{2\varepsilon_{0}}&&\cr
+\end{flalign*}
+$$
+
+
+
+
+
+
+
+
+
 
 
