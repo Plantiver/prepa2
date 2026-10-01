@@ -31,9 +31,39 @@
               "icon": "lucide-file",
               "title": "TODO"
             }
+          },
+          {
+            "id": "a8d6c662d1483f3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Phys - EM3 - Équation de Maxwell-Gauss et théorème de Gauss.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Phys - EM3 - Équation de Maxwell-Gauss et théorème de Gauss"
+            }
+          },
+          {
+            "id": "722b2a5b7a95b8eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Phys - Démo - Champ électrique d'une sphère.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Phys - Démo - Champ électrique d'une sphère"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -87,10 +117,19 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1322349c7f34e1e",
+  "active": "722b2a5b7a95b8eb",
   "lastOpenFiles": [
     "Phys - EM3 - Équation de Maxwell-Gauss et théorème de Gauss.md",
+    "Phys - Démo - Champ électrique d'une sphère.md",
+    "Démo.md",
+    "Phys - Démo.md",
+    "Démo - Champ électrique d'une sphère.md",
+    "Phys - Démo - Potentiel d'un dypole.md",
     "TODO.md",
+    "Démo - Lemme de l'étoile.md",
+    "Main.md",
+    "Math - Lesson - 5.md",
+    "Math - Lesson - 4.md",
     "Citation profs.md",
     "Phys - E2 - Electronique logique.md",
     "Phys - Lesson.md",
@@ -100,7 +139,6 @@
     "Excalidraw",
     "Tipe - Process.md",
     "TIPE.md",
-    "Main.md",
     "Info - Td - 2.md",
     "English - Méthode - Mines-Pont.md",
     "English - Méthode.md",
@@ -108,14 +146,6 @@
     "English - Traduction.md",
     "English - Verrou centrale.md",
     "English - synthèse -1.md",
-    "English - synthèse.md",
-    "English.md",
-    "Phys - Dm.md",
-    "Phys - Démo - Intensité dans un fil.md",
-    "Phys - Démo.md",
-    "Phys - EM1 - Champs et potentiels créés par des charges ponctuelles.md",
-    "Phys - EM2 - Sources continues du champ électromagnétique.md",
-    "Math - Dm - 1.md",
     "FocusLog/2026",
     "FocusLog",
     "_pomodoro_log/2026",

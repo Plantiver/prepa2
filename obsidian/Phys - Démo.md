@@ -1,5 +1,5 @@
 
-- Potentielle d'un dipole
+- [[Phys - Démo - Potentiel d'un dypole]]
 - [[Phys - Démo - Intensité dans un fil]]
-- [[Démo - Champ électrique crée d'une sphère]]
-- [[Démo - Champ électrique crée d'une particule]]
+- [[Phys - Démo - Champ électrique d'une sphère]]
+- [[Phys - Démo - Champ électrique d'une particule]]

@@ -10,9 +10,10 @@
 - Fiche méthode Dissertation + Résumé
 # [[Info]]
 - démo complexité union find+fonctions, parcours en profondeur.
-- démo lemme de l'étoile
+- Dm
 # [[Math]]
 - DL, relation d'ordre et d'équivalence
+- Finir exo 40
 # [[Phys]]
 - cours E2, EM1, EM2 en fiche
 - cours de l'année dernière en fiche

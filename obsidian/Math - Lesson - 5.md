@@ -92,7 +92,7 @@ $$
 Def. Norme sur un $K$-espace vectoriel $E$::
 - Positivité : $\forall x \in E, \; \|x\| \ge 0$
 - Homogénéité : $\forall \lambda \in K, \; \forall x \in E, \; \|\lambda x\| = |\lambda| \cdot \|x\|$
-- Séparation : $\forall x \in E, \; \|x\| = 0 \implies x = 0_E$
+- Définition : $\forall x \in E, \; \|x\| = 0 \implies x = 0_E$
 - Inégalité triangulaire : $\forall (x, y) \in E^2, \; \|x + y\| \le \|x\| + \|y\|$
 <!-- basicblock-end -->
 
@@ -111,38 +111,41 @@ $$
 <!-- basicblock-end -->
 
 <!-- basicblock-start oid="ObsP6q7R8s9T0u1V2w3X4y5Z6" -->
-Prop. Seconde inégalité triangulaire dans un EVN $(E, \|\cdot\|)$::
+Prop. Seconde inégalité triangulaire::
 $$
 \forall (x, y) \in E^2, \; \big| \|x\| - \|y\| \big| \le \|x - y\|
 $$
 <!-- basicblock-end -->
 
 <!-- basicblock-start oid="ObsQ7r8S9t0U1v2W3x4Y5z6A7" -->
-Def. Partie bornée d'un EVN $(E, \|\cdot\|)$::
+Def. Partie bornée::
 $$
 \exists M \in \mathbb{R}^+, \; \forall x \in X, \; \|x\| \le M
 $$
 <!-- basicblock-end -->
 
 <!-- basicblock-start oid="ObsR8s9T0u1V2w3X4y5Z6a7B8" -->
-Def. Fonction bornée $f: X \to E$ dans un EVN $(E, \|\cdot\|)$::
+Def. Fonction bornée::
 $$
 \exists M \in \mathbb{R}^+, \; \forall x \in X, \; \|f(x)\| \le M
 $$
 <!-- basicblock-end -->
 
 <!-- basicblock-start oid="ObsS9t0U1v2W3x4Y5z6A7b8C9" -->
-Def. Boule ouverte et boule fermée dans un EVN $(E, \|\cdot\|)$::
+Def. Boule ouverte::
 $$
-\begin{cases}
-B(x, \epsilon) = \{ y \in E, \; \|y - x\| < \epsilon \} \cr
-\overline{B}(x, \epsilon) = \{ y \in E, \; \|y - x\| \le \epsilon \}
-\end{cases}
+B(x, \epsilon) = \{ y \in E, \; \|y - x\| < \epsilon \}
+$$
+<!-- basicblock-end -->
+<!-- basicblock-start -->
+Def. Boule fermée::
+$$
+\overline B(x,\varepsilon)=\mathrm{Set}( y\in X,\;\|y-x\|\leq\varepsilon )
 $$
 <!-- basicblock-end -->
 
 <!-- basicblock-start oid="ObsT0u1V2w3X4y5Z6a7B8c9D0" -->
-Prop. Propriétés des boules dans un EVN::
+Prop. les boules::
 - Toute boule est bornée.
 - Toute boule est convexe.
 <!-- basicblock-end -->
@@ -385,6 +388,24 @@ Th. Valeur d'adhérence unique et convergence::
 - Une suite d'un compact possédant une unique valeur d'adhérence converge dans ce compact.
 - En dimension finie, une suite bornée possédant une unique valeur d'adhérence converge.
 <!-- basicblock-end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
