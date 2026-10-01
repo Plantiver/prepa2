@@ -57,6 +57,11 @@ element_t *trouver(element_t *element)
   return element->parent;
 }
 
+element_t*trouver_bis(element_t*elt) {
+	for (;elt->parent!=elt;elt=elt->parent) {};
+	return elt;
+}
+
 void unir(element_t *premier, element_t *second)
 {
   lier(trouver(premier), trouver(second));
@@ -66,6 +71,7 @@ void print_partition(partition partition, unsigned int nb_elements)
 {
   for (unsigned int i = 0; i < nb_elements; i++)
   {
-    printf("%d [%d] -> %d\n", partition[i].valeur, partition[i].rang, partition[i].parent->valeur);
+    printf("%d [%d] -> %d, ", partition[i].valeur, partition[i].rang, partition[i].parent->valeur);
   }
+  printf("\n");
 }
