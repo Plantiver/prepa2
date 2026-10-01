@@ -61,5 +61,14 @@
       ],
       "key": "I"
     }
-  ]
+  ],
+  "obsidian-git:push": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ],
+  "obsidian-excalidraw-plugin:save": []
 }
