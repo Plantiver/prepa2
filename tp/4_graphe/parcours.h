@@ -13,4 +13,6 @@ void empiler_sommets(int*,int);
 int visiter(graphe*,int,int*,int);
 int*parcours(graphe*,int*);
 
+void afficher_pile(int*);
+
 #endif

@@ -28,4 +28,10 @@ graphe*init_grille(int);
 
 void print_grille(graphe*);
 
+graphe*transpose(graphe*);
+
+int repr(graphe*,int);
+
+int coloriage(graphe*);
+
 #endif

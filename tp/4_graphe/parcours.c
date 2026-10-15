@@ -1,5 +1,6 @@
 #include "parcours.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 int*init_pile(int n) {
 	int*r = malloc((n+1)*sizeof(int));
@@ -22,15 +23,16 @@ bool est_vide(int*p) {
 }
 
 void empiler_sommets(int*p, int nb) {
-	for (int i=0;i<nb;i++) empiler(p,i);
+	for (int i=0;i<nb;i++) empiler(p,nb-i-1);
 }
 
 int visiter(graphe*g,int s,int*p,int t) {
 	g->smts[s].status = EN_EXPLORATION;
 	g->smts[s].debut = ++t;
 	for (int i=0;i<g->adja[s][0];i++) {
-		x=g->adja[s][1+i];
+		int x=g->adja[s][1+i];
 		if (g->smts[x].status==NON_VU) {
+			g->smts[x].parent = s;
 			t = visiter(g,x,p,t);
 		}
 	}
@@ -47,7 +49,8 @@ int*parcours(graphe*g,int*p) {
 	int t=0;
 	while (!est_vide(p)) {
 		int s = depiler(p);
-		if (g->smts[i].status==NON_VU) {
+		if (g->smts[s].status==NON_VU) {
+			g->smts[s].parent = s;
 			t=visiter(g,s,p_,t);
 		}
 	}
@@ -55,4 +58,10 @@ int*parcours(graphe*g,int*p) {
 	return p_;
 }
 
+void afficher_pile(int*p) {
+	for (int i=0;i<p[0];i++) {
+		printf("%d->",p[i+1]);
+	}
+	printf("*\n");
+}
 

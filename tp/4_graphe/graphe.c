@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <stdio.h>
+#include <string.h>
 
 #define INDICE(i,j,n) ((i)*(n)+(j))
 
@@ -86,6 +87,7 @@ void print_grille(graphe*g) {
 	}
 	for (int i=0;i<n;i++) {
 		for (int j=0;j<n;j++) {
+			//printf("%d", INDICE(i,j,n));
 			printf("%d",g->smts[INDICE(i,j,n)].couleur);
 			if (j!=n-1) {
 				if (existe_arc(g,INDICE(i,j,n),INDICE(i,j+1,n)))
@@ -98,9 +100,9 @@ void print_grille(graphe*g) {
 		for (int j=0;j<n;j++) {
 			if (i!=n-1) {
 				if (existe_arc(g,INDICE(i,j,n),INDICE(i+1,j,n)))
-					printf("↑");
-				else
 					printf("↓");
+				else
+					printf("↑");
 			}
 			printf(" ");
 		}
@@ -108,9 +110,40 @@ void print_grille(graphe*g) {
 	}
 }
 
+graphe*transpose(graphe*g) {
+	graphe*r = init_graphe(g->nb_sommet);
+	memcpy(r->smts, g->smts, g->nb_sommet*sizeof(sommet));
+	for (int i=0;i<g->nb_sommet;i++) {
+		for (int j=0;j<g->nb_sommet;j++) {
+			if (existe_arc(g,i,j)) {
+				ajouter_arc(r,j,i);
+			}
+		}
+	}
+	return r;
+}
 
+int repr(graphe*g,int k) {
+	int p = g->smts[k].parent;
+	if (p==k) return p;
+	/*int r = repr(g,p);
+	g->smts[k].parent = r;
+	return r;*/
+	return repr(g,p);
+}
 
-
-
-
+int coloriage(graphe*g) {
+	int n = g->nb_sommet;
+	int r = 0;
+	
+	for (int i=0;i<n;i++) {
+		if (repr(g,i)==i) {
+			g->smts[i].couleur = r++;
+		}
+	}
+	for (int i=0;i<n;i++) {
+		g->smts[i].couleur = g->smts[repr(g,i)].couleur;
+	}
+	return r;
+}
 
